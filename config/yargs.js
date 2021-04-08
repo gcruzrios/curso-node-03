@@ -5,10 +5,18 @@ const argv = require('yargs')
                 demandOption:true,
                 describe: 'es la base del número '
             })
+            .option('h',{
+                alias: 'hasta',
+                type: 'boolean',
+                //demandOption:true,
+                default:10,
+                describe:'El maximo valor de la tabla'
+            })
+            
             .option('l',{
                 alias: 'listar',
                 type: 'boolean',
-                demandOption:true,
+                //demandOption:true,
                 default:false,
                 describe:'Muestra la tabla de multiplicar'
             })
